@@ -1,8 +1,10 @@
 # URL-Shortener-using-Haskell
 
 **Objective:**
-  In this project I have implemented a simple URL Shortener that will turn long boring links into a short and sweet ones.
+  
+  In this project, I created a basic URL Shortener that converts long, boring links into short, snappy links. 
   
 **Implementation:**
-  I have used a package called as blaze to convert haskell code to html document. Scotty is used to start and run a server on a specific port. Once the server starts running the haskell build will generate a file for read and write operations. After the user types in a link and clicks submit, the link is insert into a map along with the index and written into the file. All the original links, generated links along with their index number is displayed in the home page. If a user tries to hit up an index, the get method will search for the index and redirect to the corresponding link. If the index doesnt exist in the file then it will return 404 not found status.
+  
+  To convert haskell code to an HTML document, I used the blaze package. Scotty is a command line tool that is being used to start and run a server on a given port. The haskell build will generate a file for read and write operations once the server is up and running. The link is inserted into a map along with the index and written into the file after the user types in a link and hits submit. The home page displays all of the original and created links, as well as their index numbers. If a user attempts to access an index, the get method will look for it and redirect to the appropriate link. It will return 404 not found status if the index does not exist in the file. 
   
